@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Secuwifi.iml" filepath="$PROJECT_DIR$/../Secuwifi.iml" group="Secuwifi" />
+      <module fileurl="file://$PROJECT_DIR$/../Secuwifi.JNH/Secuwifi.JNH.iml" filepath="$PROJECT_DIR$/../Secuwifi.JNH/Secuwifi.JNH.iml" group="Secuwifi/Secuwifi.JNH" />
+      <module fileurl="file://$PROJECT_DIR$/../Secuwifi.Jnhpoint/Secuwifi.Jnhpoint.iml" filepath="$PROJECT_DIR$/../Secuwifi.Jnhpoint/Secuwifi.Jnhpoint.iml" group="Secuwifi/Secuwifi.Jnhpoint" />
+      <module fileurl="file://$PROJECT_DIR$/Secuwifi.KCTV.iml" filepath="$PROJECT_DIR$/Secuwifi.KCTV.iml" group="Secuwifi/Secuwifi.KCTV" />
+      <module fileurl="file://$PROJECT_DIR$/../rainpass-wifi-release/rainpass-wifi-release.iml" filepath="$PROJECT_DIR$/../rainpass-wifi-release/rainpass-wifi-release.iml" group="Secuwifi/rainpass-wifi-release" />
+    </modules>
+  </component>
+</project>

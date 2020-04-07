@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_background"
+    tools:context="com.innoaus.secuwifi.kctv.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_topbar_background"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/company_name"
+                android:textColor="@color/color_topbar_text" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/toolbar_button_wifi"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/empty_description"
+                android:padding="8dp"
+                android:src="@drawable/icon_wifi"
+                android:tint="@color/color_wifi_unknown" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/layout_status"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_below="@+id/my_toolbar"
+        android:background="@drawable/drawable_status_background">
+
+        <LinearLayout
+            android:id="@+id/layout_status_default"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="[안전한 WiFi 연결하기] 버튼을 클릭하여 사내 WiFi에 연결할 수 있습니다."
+                android:textColor="@color/color_light_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_status_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재 연결된 WIFI"
+                android:textColor="@color/color_light_text" />
+
+            <TextView
+                android:id="@+id/text_networkname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECUWIFI"
+                android:textColor="@color/color_light_text"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_status">
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <LinearLayout
+                android:id="@+id/layout_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_connect"
+                    style="@style/MainImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:drawableLeft="@drawable/icon_wifi"
+                    android:text="@string/string_button_connect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_enex"
+                    style="@style/MainWhiteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:drawableLeft="@drawable/icon_exit"
+                    android:text="@string/string_button_exit" />
+
+                <Button
+                    android:id="@+id/button_notice"
+                    style="@style/MainWhiteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:drawableLeft="@drawable/icon_notice"
+                    android:text="@string/string_button_notice" />
+
+                <Button
+                    android:id="@+id/button_detail"
+                    style="@style/MainImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:drawableLeft="@drawable/icon_laptop"
+                    android:text="@string/string_button_detail"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_content3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_guide"
+                    style="@style/MainNavyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:drawableLeft="@drawable/icon_guide"
+                    android:text="@string/string_button_guide"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

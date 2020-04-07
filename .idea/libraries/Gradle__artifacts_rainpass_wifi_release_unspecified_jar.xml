@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:rainpass-wifi-release:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../rainpass-wifi-release/build/.transforms/c57440b664a9a58ead5f846e377887c1/jetified-rainpass-wifi-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../rainpass-wifi-release/build/.transforms/c57440b664a9a58ead5f846e377887c1/jetified-rainpass-wifi-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

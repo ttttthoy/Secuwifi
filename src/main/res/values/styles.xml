@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="colorPrimary">@color/color_white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyActionBarStyle">
+        <item name="android:textColor">@color/color_dark_text</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MainImageButton">
+        <item name="android:background">@drawable/drawable_mainbutton</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="MainWhiteButton" parent="MainImageButton">
+        <item name="android:background">@drawable/drawable_whitebutton</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="MainNavyButton" parent="MainImageButton">
+        <item name="android:background">@drawable/drawable_navybutton</item>
+    </style>
+    <style name="WhiteButton">
+        <item name="android:background">@drawable/drawable_whitebutton</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="ContentDescription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_dark_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="CodeText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_code</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+</resources>
